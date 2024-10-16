@@ -5,7 +5,7 @@
 This project is for my [hacktober event](https://github.com/GDG-GTBIT/Hacktoberfest-2024-AIML)
 for this problem i will be building NN to solve house pricing problem using nn from scratch. 
 
-## Collecting data:
+### Collecting data:
 For this step i will make use of pandas liberary
 -I will use [kaggle dataset](https://www.kaggle.com/code/stpeteishii/titanic-fastai) by fastAi.
 -Using pandas liberary i will filter out the data, handle missing values, and mormalise the standard values..
@@ -16,7 +16,7 @@ For this step i will make use of pandas liberary
 -All the backend kernels will be written by hand using cuda and trition.
 -Which will include matrix_mul, matrix_transpose, Parallel prefix sum of arr.
 
-# Steps to Design the Neural Network Architecture: 
+### Steps to Design the Neural Network Architecture: 
 
 ** INPUT LAYER: Define the input layer(customisable depending upon the feature of the dataset)
 ** HIDDEN LAYER: Defineing the numebr of hidden layers(generation random weights for the loss funciton to work)
@@ -24,26 +24,26 @@ For this step i will make use of pandas liberary
 
 ((((Input) * weights) +bias) Activation function)
 
-# Applying Activation function: 
+### Applying Activation function: 
 Actvation functions is to determine the firing of a neuron depending upon the prev input
 Using Sigmoid activatin function for binary classification. 
 
 writing cuda kernel for activation function: 
 Sigmoid: S(x) = {1}//{1+e^{-x}}
 
-# Loss function
+### Loss function
 important to define it in a way to calculate total loss of layer and save the gradiants for the backpropagtion
 using mse: (y(real)^2 -y(predi)^).root 
 
-# Forward propagation##
+### Forward propagation##
 Y(preds) = X(inp) * Weights + bias
 
-# Backpropagtion##
+### Backpropagtion##
 --Calculating the gradiants of the loss function with respect to the weights
 --((((Input) * weights) +bias) Activation function) Applying chain rule on this
 to update weights and biases to minimise the lose.
 
-# Training Loop
+### Training Loop
 Defining the number epochs to run and batch and mini-batch
 
 
