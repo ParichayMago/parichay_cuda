@@ -48,7 +48,7 @@ Defining the number epochs to run and batch and mini-batch
 
 
 
-## Cuda Kernels to writing for the function to work:
+## Cuda Kernels to writ for the function to work:
 -Feed Forwward kerenel
 Applying matrix transpose, matrix multiplication of weights and inputs and adding the biases parellely. 
 Applying the activation function on the outputs to normalise the value of neuron (seprate kernel needed)
